@@ -1,0 +1,77 @@
+version 2
+run ChordInet-0-20211107-09:56:45-7888
+attr configname ChordInet
+attr datetime 20211107-09:56:45
+attr experiment ChordInet
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network oversim.underlay.inetunderlay.InetUnderlayNetwork
+attr processid 7888
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+vector 13  InetUnderlayNetwork.overlayTerminal[0].ppp[0].queue  "queue length"  ETV
+vector 6  InetUnderlayNetwork.overlayAccessRouter[0].ppp[0].queue  "queue length"  ETV
+vector 0  InetUnderlayNetwork.backboneRouter[0].ppp[0].queue  "queue length"  ETV
+vector 21  InetUnderlayNetwork.overlayTerminal[2].ppp[0].queue  "queue length"  ETV
+vector 25  InetUnderlayNetwork.overlayTerminal[3].ppp[0].queue  "queue length"  ETV
+vector 23  InetUnderlayNetwork.accessRouter[0].ppp[3].queue  "queue length"  ETV
+vector 19  InetUnderlayNetwork.overlayAccessRouter[0].ppp[1].queue  "queue length"  ETV
+vector 29  InetUnderlayNetwork.overlayTerminal[4].ppp[0].queue  "queue length"  ETV
+vector 27  InetUnderlayNetwork.accessRouter[0].ppp[4].queue  "queue length"  ETV
+vector 33  InetUnderlayNetwork.overlayTerminal[5].ppp[0].queue  "queue length"  ETV
+vector 17  InetUnderlayNetwork.overlayTerminal[1].ppp[0].queue  "queue length"  ETV
+vector 37  InetUnderlayNetwork.overlayTerminal[6].ppp[0].queue  "queue length"  ETV
+0	705	2.319841175	1
+0	706	2.319841241	0
+0	1648	4.654256121	1
+0	1649	4.654256187	0
+6	692	2.318840967	1
+6	694	2.318841104	0
+6	1635	4.653255913	1
+6	1637	4.65325605	0
+13	307	1.522618016	1
+13	309	1.523786016	0
+13	628	2.283156843	1
+13	630	2.284324843	0
+17	2700	6.348725118	1
+17	2702	6.350517118	0
+19	1314	2.571165663	1
+19	1321	2.571879709	0
+19	1405	2.634069753	1
+19	1411	2.634103709	0
+21	750	2.347493075	1
+21	751	2.347493075	2
+21	753	2.348029075	1
+21	755	2.348749075	0
+21	2262	5.298178594	1
+21	2264	5.299762594	0
+23	912	2.387473535	1
+23	913	2.387497495	0
+25	788	2.352217241	1
+25	789	2.352217241	2
+25	791	2.352753241	1
+25	793	2.353473241	0
+27	1772	4.721888481	1
+27	1773	4.721912441	0
+29	1694	4.686632187	1
+29	1695	4.686632187	2
+29	1697	4.687168187	1
+29	1699	4.687888187	0
+33	2314	5.361346594	1
+33	2316	5.361882594	0
+37	2764	6.412309118	1
+37	2765	6.412309118	2
+37	2766	6.412309118	3
+37	2767	6.412309118	4
+37	2768	6.412309118	5
+37	2770	6.412845118	4
+37	2772	6.413565118	3
+37	2774	6.414285118	2
+37	2776	6.415005118	1
+37	2778	6.415725118	0

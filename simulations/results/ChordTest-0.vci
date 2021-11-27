@@ -1,0 +1,20 @@
+file 603 1636450943                                             
+version 2
+run ChordTest-0-20211109-15:09:53-4204
+attr configname ChordTest
+attr datetime 20211109-15:09:53
+attr experiment ChordTest
+attr inifile temp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network oversim.underlay.simpleunderlay.SimpleUnderlayNetwork
+attr processid 4204
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+vector 1  SimpleUnderlayNetwork.globalObserver.globalStatistics  "GlobalNodeList: Number of nodes"  ETV
+1	534 69 1993 9806 50 250 5 3 3 15 45
