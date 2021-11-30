@@ -63,7 +63,6 @@ INCLUDE_PATH = \
     -Ioverlay/kademlia \
     -Ioverlay/koorde \
     -Ioverlay/myoverlay \
-    -Ioverlay/myoverlay1 \
     -Ioverlay/nice \
     -Ioverlay/ntree \
     -Ioverlay/pastry \
@@ -164,7 +163,6 @@ OBJS = \
     $O/common/GlobalTraceManager.o \
     $O/common/IterativeLookup.o \
     $O/common/LifetimeChurn.o \
-    $O/common/MyClass.o \
     $O/common/NeighborCache.o \
     $O/common/NoChurn.o \
     $O/common/NodeHandle.o \
@@ -229,8 +227,6 @@ OBJS = \
     $O/overlay/kademlia/KademliaNodeHandle.o \
     $O/overlay/koorde/Koorde.o \
     $O/overlay/myoverlay/MyOverlay.o \
-    $O/overlay/myoverlay1/MyApplication1.o \
-    $O/overlay/myoverlay1/MyOverlay1.o \
     $O/overlay/nice/Nice.o \
     $O/overlay/nice/NiceCluster.o \
     $O/overlay/nice/NicePeerInfo.o \
@@ -321,7 +317,6 @@ OBJS = \
     $O/overlay/gia/GiaMessage_m.o \
     $O/overlay/kademlia/KademliaMessage_m.o \
     $O/overlay/myoverlay/MyOverlay_m.o \
-    $O/overlay/myoverlay1/MyMessage1_m.o \
     $O/overlay/nice/NiceMessage_m.o \
     $O/overlay/ntree/NTree_m.o \
     $O/overlay/pastry/PastryMessage_m.o \
@@ -361,7 +356,6 @@ MSGFILES = \
     overlay/gia/GiaMessage.msg \
     overlay/kademlia/KademliaMessage.msg \
     overlay/myoverlay/MyOverlay.msg \
-    overlay/myoverlay1/MyMessage1.msg \
     overlay/nice/NiceMessage.msg \
     overlay/ntree/NTree.msg \
     overlay/pastry/PastryMessage.msg \
@@ -473,7 +467,6 @@ clean:
 	-rm -f overlay/kademlia/*_m.cc overlay/kademlia/*_m.h
 	-rm -f overlay/koorde/*_m.cc overlay/koorde/*_m.h
 	-rm -f overlay/myoverlay/*_m.cc overlay/myoverlay/*_m.h
-	-rm -f overlay/myoverlay1/*_m.cc overlay/myoverlay1/*_m.h
 	-rm -f overlay/nice/*_m.cc overlay/nice/*_m.h
 	-rm -f overlay/ntree/*_m.cc overlay/ntree/*_m.h
 	-rm -f overlay/pastry/*_m.cc overlay/pastry/*_m.h
@@ -501,7 +494,7 @@ cleanall: clean
 	-rm -rf $(PROJECT_OUTPUT_DIR)
 
 depend:
-	$(MAKEDEPEND) $(INCLUDE_PATH) -f Makefile -P\$$O/ -- $(MSG_CC_FILES)  ./*.cc applications/*.cc applications/almtest/*.cc applications/dht/*.cc applications/giasearchapp/*.cc applications/i3/*.cc applications/i3/i3Apps/*.cc applications/kbrtestapp/*.cc applications/myapplication/*.cc applications/realworldtestapp/*.cc applications/scribe/*.cc applications/simplegameclient/*.cc applications/tcpexampleapp/*.cc applications/tierdummy/*.cc common/*.cc common/cbr/*.cc common/cbr/globalViewBuilder/*.cc overlay/*.cc overlay/bamboo/*.cc overlay/broose/*.cc overlay/chord/*.cc overlay/gia/*.cc overlay/kademlia/*.cc overlay/koorde/*.cc overlay/myoverlay/*.cc overlay/myoverlay1/*.cc overlay/nice/*.cc overlay/ntree/*.cc overlay/pastry/*.cc overlay/pubsubmmog/*.cc overlay/quon/*.cc overlay/vast/*.cc tier2/*.cc tier2/dhttestapp/*.cc tier2/p2pns/*.cc tier2/simmud/*.cc tier3/*.cc tier3/xmlrpcinterface/*.cc tier3/xmlrpcinterface/xmlrpc++/*.cc underlay/*.cc underlay/inetunderlay/*.cc underlay/inetunderlay/ipv6/*.cc underlay/reaseunderlay/*.cc underlay/reaseunderlay/topologies/*.cc underlay/reaseunderlay/topologies/topology_example/*.cc underlay/reaseunderlay/topologies/topology_tiny_oversim/*.cc underlay/simpleunderlay/*.cc underlay/singlehostunderlay/*.cc
+	$(MAKEDEPEND) $(INCLUDE_PATH) -f Makefile -P\$$O/ -- $(MSG_CC_FILES)  ./*.cc applications/*.cc applications/almtest/*.cc applications/dht/*.cc applications/giasearchapp/*.cc applications/i3/*.cc applications/i3/i3Apps/*.cc applications/kbrtestapp/*.cc applications/myapplication/*.cc applications/realworldtestapp/*.cc applications/scribe/*.cc applications/simplegameclient/*.cc applications/tcpexampleapp/*.cc applications/tierdummy/*.cc common/*.cc common/cbr/*.cc common/cbr/globalViewBuilder/*.cc overlay/*.cc overlay/bamboo/*.cc overlay/broose/*.cc overlay/chord/*.cc overlay/gia/*.cc overlay/kademlia/*.cc overlay/koorde/*.cc overlay/myoverlay/*.cc overlay/nice/*.cc overlay/ntree/*.cc overlay/pastry/*.cc overlay/pubsubmmog/*.cc overlay/quon/*.cc overlay/vast/*.cc tier2/*.cc tier2/dhttestapp/*.cc tier2/p2pns/*.cc tier2/simmud/*.cc tier3/*.cc tier3/xmlrpcinterface/*.cc tier3/xmlrpcinterface/xmlrpc++/*.cc underlay/*.cc underlay/inetunderlay/*.cc underlay/inetunderlay/ipv6/*.cc underlay/reaseunderlay/*.cc underlay/reaseunderlay/topologies/*.cc underlay/reaseunderlay/topologies/topology_example/*.cc underlay/reaseunderlay/topologies/topology_tiny_oversim/*.cc underlay/simpleunderlay/*.cc underlay/singlehostunderlay/*.cc
 
 # DO NOT DELETE THIS LINE -- make depend depends on it.
 $O/applications/almtest/ALMTest.o: applications/almtest/ALMTest.cc \
@@ -2325,8 +2318,6 @@ $O/common/LifetimeChurn.o: common/LifetimeChurn.cc \
   common/TransportAddress.h \
   common/OverlayKey.h \
   common/NodeHandle.h
-$O/common/MyClass.o: common/MyClass.cc \
-  common/MyClass.h
 $O/common/NeighborCache.o: common/NeighborCache.cc \
   common/cbr/globalViewBuilder/StrategyTreeTest.h \
   common/OverSimMessage.h \
@@ -4681,8 +4672,6 @@ $O/overlay/myoverlay/MyOverlay_m.o: overlay/myoverlay/MyOverlay_m.cc \
   common/NodeHandle.h \
   common/Vector2D.h \
   common/OverSimMessage_m.h
-$O/overlay/myoverlay1/MyApplication1.o: overlay/myoverlay1/MyApplication1.cc
-$O/overlay/myoverlay1/MyOverlay1.o: overlay/myoverlay1/MyOverlay1.cc
 $O/overlay/nice/Nice.o: overlay/nice/Nice.cc \
   common/OverSimMessage.h \
   ../../inet/src/transport/contract/TCPSocketMap.h \
