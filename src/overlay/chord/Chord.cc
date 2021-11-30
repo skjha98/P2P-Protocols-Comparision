@@ -31,6 +31,7 @@
 #include <ChordSuccessorList.h>
 
 #include "Chord.h"
+#include "MyClass.h"
 
 namespace oversim {
 

@@ -163,6 +163,7 @@ OBJS = \
     $O/common/GlobalTraceManager.o \
     $O/common/IterativeLookup.o \
     $O/common/LifetimeChurn.o \
+    $O/common/MyClass.o \
     $O/common/NeighborCache.o \
     $O/common/NoChurn.o \
     $O/common/NodeHandle.o \
@@ -2318,6 +2319,8 @@ $O/common/LifetimeChurn.o: common/LifetimeChurn.cc \
   common/TransportAddress.h \
   common/OverlayKey.h \
   common/NodeHandle.h
+$O/common/MyClass.o: common/MyClass.cc \
+  common/MyClass.h
 $O/common/NeighborCache.o: common/NeighborCache.cc \
   common/cbr/globalViewBuilder/StrategyTreeTest.h \
   common/OverSimMessage.h \
@@ -4051,6 +4054,7 @@ $O/overlay/chord/Chord.o: overlay/chord/Chord.cc \
   common/BootstrapList.h \
   common/BaseApp.h \
   ../../inet/src/networklayer/contract/IPAddress.h \
+  common/MyClass.h \
   overlay/chord/Chord.h \
   common/RecursiveLookup.h \
   common/CommonMessages_m.h \
