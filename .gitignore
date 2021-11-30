@@ -1,0 +1,8 @@
+simulations/results/ChordDht-0.sca
+simulations/results/ChordDht-0.vci
+simulations/results/ChordDht-0.vec
+src/Makefile
+simulations/results.dat
+src/OverSim.exe
+*.o
+.vscode
