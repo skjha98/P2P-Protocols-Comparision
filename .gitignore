@@ -1,8 +1,9 @@
-simulations/results/ChordDht-0.sca
-simulations/results/ChordDht-0.vci
-simulations/results/ChordDht-0.vec
+gitclone
+concert-4g
+BitTorrent_Omnet4
+BIT-SIM
+out
 src/Makefile
-simulations/results.dat
 src/OverSim.exe
 *.o
 .vscode
