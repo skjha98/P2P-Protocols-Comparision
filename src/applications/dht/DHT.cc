@@ -560,6 +560,9 @@ void DHT::handleGetResponse(DHTGetResponse* dhtMsg, int rpcId)
 
     if (it == pendingRpcs.end()) // unknown request
         return;
+    
+    MyClass::removeLookup(dhtMsg->getKey());
+
 
     if (it->second.state == GET_VALUE_SENT) {
         // we have sent a 'real' get request
@@ -686,7 +689,6 @@ void DHT::handleGetResponse(DHTGetResponse* dhtMsg, int rpcId)
             pendingRpcs.erase(rpcId);
         }
     }
-    MyClass::removeLookup(dhtMsg->getKey());
 }
 
 void DHT::update(const NodeHandle& node, bool joined)

@@ -1,0 +1,22 @@
+file 2779 1638364647                                            
+version 2
+run ChordDht-0-20211201-18:46:41-8648
+attr configname ChordDht
+attr datetime 20211201-18:46:41
+attr experiment ChordDht
+attr inifile configs.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network oversim.underlay.simpleunderlay.SimpleUnderlayNetwork
+attr processid 8648
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+vector 1  SimpleUnderlayNetwork.globalObserver.globalStatistics  "GlobalDhtTestMap: Number of stored DHT entries"  ETV
+vector 2  SimpleUnderlayNetwork.globalObserver.globalStatistics  "GlobalNodeList: Number of nodes"  ETV
+1	654 1786 30995 361066 110 1100 100 54 259 22848 5457878
+2	2440 339 48349 361064 150 1100 20 50 50 1000 50000

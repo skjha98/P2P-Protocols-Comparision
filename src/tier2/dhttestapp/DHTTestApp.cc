@@ -339,7 +339,7 @@ void DHTTestApp::handleTimerEvent(cMessage* msg)
         dhtPutMsg->setIsModifiable(true);
 
         RECORD_STATS(numSent++; numPutSent++);
-        MyClass::addLookup(destKey, simTime().dbl());
+        //MyClass::addLookup(destKey, simTime().dbl());
         sendInternalRpcCall(TIER1_COMP, dhtPutMsg,
                 new DHTStatsContext(globalStatistics->isMeasuring(),
                                     simTime(), destKey, dhtPutMsg->getValue()));
@@ -425,7 +425,7 @@ void DHTTestApp::handleTimerEvent(cMessage* msg)
         dhtPutMsg->setIsModifiable(true);
 
         RECORD_STATS(numSent++; numPutSent++);
-        MyClass::addLookup(key, simTime().dbl());
+        //MyClass::addLookup(key, simTime().dbl());
         sendInternalRpcCall(TIER1_COMP, dhtPutMsg,
                 new DHTStatsContext(globalStatistics->isMeasuring(),
                                     simTime(), key, dhtPutMsg->getValue()));

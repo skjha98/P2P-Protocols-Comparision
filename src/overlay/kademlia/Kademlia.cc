@@ -36,6 +36,8 @@
 #include <RpcMacros.h>
 #include <BootstrapList.h>
 
+#include "MyClass.h"
+
 
 #if 0
 #define BUCKET_CONSISTENCY(msg) \
@@ -1112,6 +1114,7 @@ NodeVector* Kademlia::findNode(const OverlayKey& key, int numRedundantNodes,
 
     delete comp;
 
+    MyClass::isValidLookup(key);
     return result;
 }
 

@@ -89,6 +89,10 @@ void MyClass::addKeys(int keys) {
 }
 // inserts lookups and simTimes to map containers
 void MyClass::addLookup(OverlayKey key, double simtime) {
+    // Starting from here
+    ofstream outFile("addLookup.txt", ios::app);
+    outFile << "key: " << key.toString(16) << "\n";
+    //
     lookups.insert(make_pair(key, 0));
     delays.insert(make_pair(key, simtime));
     lookup_calls++;
@@ -98,6 +102,12 @@ void MyClass::addDelay(double delay) {
 }
 // removes lookups from the map container
 void MyClass::removeLookup(OverlayKey key) {
+
+    // Starting from here
+    ofstream outFile("removedKeys.txt", ios::app);
+    outFile << "key: " << key.toString(16) << "\n";
+    //
+
     bool skip = false;
 
     // checks that the key exists in the lookups map
