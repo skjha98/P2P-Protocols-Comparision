@@ -24,6 +24,7 @@
 #include <IPAddressResolver.h>
 
 #include "DHT.h"
+#include "MyClass.h"
 
 #include <RpcMacros.h>
 #include <BaseRpc.h>
@@ -685,6 +686,7 @@ void DHT::handleGetResponse(DHTGetResponse* dhtMsg, int rpcId)
             pendingRpcs.erase(rpcId);
         }
     }
+    MyClass::removeLookup(dhtMsg->getKey());
 }
 
 void DHT::update(const NodeHandle& node, bool joined)
@@ -937,6 +939,7 @@ void DHT::finishApp()
                                     numBytesMaintenance / time);
         globalStatistics->addStdDev("DHT: Sent Normal Bytes/s",
                                     numBytesNormal / time);
+        MyClass::addKeys(dataStorage->getSize()); 
     }
 }
 

@@ -38,7 +38,7 @@ double MyClass::numberOfNodes = 0;
 double MyClass::numberOfKeys = 0;
 double MyClass::maxKeys = 0;
 double MyClass::minKeys = 1000;
-int MyClass::maxDelay = 10;
+int MyClass::maxDelay = INT_MAX;
 
 string MyClass::dht = "empty";
 double MyClass::lookupFreq = 0;

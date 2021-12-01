@@ -564,6 +564,7 @@ $O/applications/dht/DHT.o: applications/dht/DHT.cc \
   ../../inet/src/networklayer/contract/IPAddress.h \
   applications/dht/DHTMessage_m.h \
   ../../inet/src/transport/contract/TCPSocket.h \
+  common/MyClass.h \
   common/RecursiveLookup.h \
   common/TransportAddress.h \
   common/OverlayKey.h \
@@ -2240,6 +2241,7 @@ $O/common/GlobalParameters.o: common/GlobalParameters.cc \
   common/GlobalParameters.h \
   common/OverlayKey.h
 $O/common/GlobalStatistics.o: common/GlobalStatistics.cc \
+  common/MyClass.h \
   common/GlobalStatistics.h
 $O/common/GlobalTraceManager.o: common/GlobalTraceManager.cc \
   common/InitStages.h \
@@ -5532,6 +5534,7 @@ $O/tier2/dhttestapp/DHTTestApp.o: tier2/dhttestapp/DHTTestApp.cc \
   common/InitStages.h \
   common/BaseApp.h \
   ../../inet/src/networklayer/contract/IPAddress.h \
+  common/MyClass.h \
   common/RecursiveLookup.h \
   common/CommonMessages_m.h \
   common/GlobalStatisticsAccess.h \

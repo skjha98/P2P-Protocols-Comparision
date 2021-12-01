@@ -24,6 +24,7 @@
 #include <omnetpp.h>
 
 #include "GlobalStatistics.h"
+#include "MyClass.h"
 
 Define_Module(GlobalStatistics);
 
@@ -97,6 +98,8 @@ void GlobalStatistics::finish()
     // This way, all other modules have sent their statistical data to the
     // GobalStatisticModule before GlobalStatistics::finalizeStatistics()
     // is called by FinisherModule::finish()
+    MyClass::print();
+    // MyClass::reset();
     cModuleType* moduleType = cModuleType::get("oversim.common.FinisherModule");
     moduleType->create("finisherModule", getParentModule()->getParentModule());
 }
@@ -231,4 +234,3 @@ GlobalStatistics::~GlobalStatistics()
     }
     histogramMap.clear();
 }
-

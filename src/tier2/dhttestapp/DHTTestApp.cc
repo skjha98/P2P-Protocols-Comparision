@@ -29,6 +29,7 @@
 #include "CommonMessages_m.h"
 
 #include <GlobalDhtTestMap.h>
+#include "MyClass.h"
 
 #include "DHTTestApp.h"
 
@@ -338,6 +339,7 @@ void DHTTestApp::handleTimerEvent(cMessage* msg)
         dhtPutMsg->setIsModifiable(true);
 
         RECORD_STATS(numSent++; numPutSent++);
+        MyClass::addLookup(destKey, simTime().dbl());
         sendInternalRpcCall(TIER1_COMP, dhtPutMsg,
                 new DHTStatsContext(globalStatistics->isMeasuring(),
                                     simTime(), destKey, dhtPutMsg->getValue()));
@@ -368,7 +370,7 @@ void DHTTestApp::handleTimerEvent(cMessage* msg)
         DHTgetCAPICall* dhtGetMsg = new DHTgetCAPICall();
         dhtGetMsg->setKey(key);
         RECORD_STATS(numSent++; numGetSent++);
-
+        MyClass::addLookup(key, simTime().dbl());
         sendInternalRpcCall(TIER1_COMP, dhtGetMsg,
                 new DHTStatsContext(globalStatistics->isMeasuring(),
                                     simTime(), key));
@@ -423,6 +425,7 @@ void DHTTestApp::handleTimerEvent(cMessage* msg)
         dhtPutMsg->setIsModifiable(true);
 
         RECORD_STATS(numSent++; numPutSent++);
+        MyClass::addLookup(key, simTime().dbl());
         sendInternalRpcCall(TIER1_COMP, dhtPutMsg,
                 new DHTStatsContext(globalStatistics->isMeasuring(),
                                     simTime(), key, dhtPutMsg->getValue()));
@@ -476,4 +479,3 @@ void DHTTestApp::finishApp()
         }
     }
 }
-
