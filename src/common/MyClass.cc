@@ -89,10 +89,7 @@ void MyClass::addKeys(int keys) {
 }
 // inserts lookups and simTimes to map containers
 void MyClass::addLookup(OverlayKey key, double simtime) {
-    // Starting from here
-    ofstream outFile("addLookup.txt", ios::app);
-    outFile << "key: " << key.toString(16) << "\n";
-    //
+    
     lookups.insert(make_pair(key, 0));
     delays.insert(make_pair(key, simtime));
     lookup_calls++;
@@ -102,11 +99,6 @@ void MyClass::addDelay(double delay) {
 }
 // removes lookups from the map container
 void MyClass::removeLookup(OverlayKey key) {
-
-    // Starting from here
-    ofstream outFile("removedKeys.txt", ios::app);
-    outFile << "key: " << key.toString(16) << "\n";
-    //
 
     bool skip = false;
 
@@ -197,5 +189,5 @@ void MyClass::reset() {
 // prints the results to results.dat
 void MyClass::print() {
     ofstream outResultFile("results.dat", ios::app);
-    outResultFile << "DHTused " << dht << " variable" << " variable" << ' ' << "RoutingModel " << routingModel << ' ' << "LookupCalls " << lookup_calls << ' ' << "FinishedLookups: " << finished_lookups << ' ' << "removedLookups " << removed_lookups << ' ' << "SuccessRate " << finished_lookups / (lookup_calls - remaining_lookups) << ' ' << "Added " << terminalsAdded <<' ' << "Removed " << terminalsRemoved << ' ' << "HopsPerFinishedLookup: " << hopsPerLookup << ' ' << "Lookup_delay: " << lookupDelay / finished_lookups << ' ' << "Network_Size: " << networkSize << ' ' << "Stabilize_interval: " << stabilizeInterval << ' ' << "FixFingers_interval " << fixFingersInterval << ' ' << "Hops: " << hops << ' ' << "Keys_total " << numberOfKeys << ' ' << "Max_keys " << maxKeys << ' ' << "Min_keys " << minKeys << ' ' << "Keys_per_node: " << keysPerNode << endl;
+    outResultFile << "LookupCalls " << lookup_calls << ' ' << "FinishedLookups: " << finished_lookups << ' ' << "removedLookups " << removed_lookups << ' ' << "SuccessRate " << finished_lookups / (lookup_calls - remaining_lookups) << ' ' << "Added " << terminalsAdded <<' ' << "Removed " << terminalsRemoved << ' ' << "HopsPerFinishedLookup: " << hopsPerLookup << ' ' << "Lookup_delay: " << lookupDelay / finished_lookups << ' ' << "Network_Size: " << networkSize << ' ' << "Stabilize_interval: " << stabilizeInterval << ' ' << "FixFingers_interval " << fixFingersInterval << ' ' << "Hops: " << hops << ' ' << "Keys_total " << numberOfKeys << ' ' << "Max_keys " << maxKeys << ' ' << "Min_keys " << minKeys << ' ' << "Keys_per_node: " << keysPerNode << endl;
 }
