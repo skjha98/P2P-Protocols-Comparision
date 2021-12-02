@@ -1,0 +1,29 @@
+file 123087 1638438241                                          
+version 2
+run ChordDht-4-20211202-14:54:23-10332
+attr Lifetime 500s
+attr configname ChordDht
+attr datetime 20211202-14:54:23
+attr experiment ChordDht
+attr inifile configs.ini
+attr iterationvars $Lifetime=500s
+attr iterationvars2 "$Lifetime=500s, $repetition=0"
+attr measurement $Lifetime=500s
+attr network oversim.underlay.simpleunderlay.SimpleUnderlayNetwork
+attr processid 10332
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 4
+attr seedset 4
+
+vector 25  SimpleUnderlayNetwork.globalObserver.globalStatistics  "GlobalNodeList: Number of nodes"  ETV
+vector 26  SimpleUnderlayNetwork.globalObserver.globalStatistics  "GlobalDhtTestMap: Number of stored DHT entries"  ETV
+vector 27  SimpleUnderlayNetwork.globalObserver.globalStatistics  "LifetimeChurn: Time between deletes"  ETV
+vector 28  SimpleUnderlayNetwork.globalObserver.globalStatistics  "LifetimeChurn: Session Time"  ETV
+vector 29  SimpleUnderlayNetwork.globalObserver.globalStatistics  "LifetimeChurn: Time between creates"  ETV
+25	1042 400 479908 3712512 150 1100 20 490 532 10215 5219787
+26	1442 2097 479909 3857871 150 1140 100 720 2415 216072 482668932
+27	3539 38803 480006 3879376 150.029954853 1149.509690419 1027 0.002056658 8.702266722 999.521511137 1984.4275436068
+28	42342 41371 501040 3875974 154.368060171 1148.156277331 1040 0.279326817 4169.801800281 492988.14989475 473264116.1261
+29	83713 39374 501040 3875974 154.368060171 1148.156277331 1040 5.8784e-005 9.099097174 998.34658379 2027.1996383333

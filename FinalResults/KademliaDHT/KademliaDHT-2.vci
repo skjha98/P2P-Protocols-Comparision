@@ -1,0 +1,31 @@
+file 370930 1638462885                                          
+version 2
+run KademliaDHT-2-20211202-22:02:02-9356
+attr Lifetime 300s
+attr configname KademliaDHT
+attr datetime 20211202-22:02:02
+attr experiment KademliaDHT
+attr inifile configs.ini
+attr iterationvars $Lifetime=300s
+attr iterationvars2 "$Lifetime=300s, $repetition=0"
+attr measurement $Lifetime=300s
+attr network oversim.underlay.simpleunderlay.SimpleUnderlayNetwork
+attr processid 9356
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 2
+attr seedset 2
+
+vector 15  SimpleUnderlayNetwork.globalObserver.globalStatistics  "GlobalNodeList: Number of nodes"  ETV
+vector 16  SimpleUnderlayNetwork.globalObserver.globalStatistics  "GlobalDhtTestMap: Number of stored DHT entries"  ETV
+vector 17  SimpleUnderlayNetwork.globalObserver.globalStatistics  "Kademlia: Buckets Refreshed Per Task"  ETV
+vector 18  SimpleUnderlayNetwork.globalObserver.globalStatistics  "LifetimeChurn: Session Time"  ETV
+vector 19  SimpleUnderlayNetwork.globalObserver.globalStatistics  "LifetimeChurn: Time between creates"  ETV
+vector 20  SimpleUnderlayNetwork.globalObserver.globalStatistics  "LifetimeChurn: Time between deletes"  ETV
+15	1160 409 1268637 13557573 150 1100 20 486 531 10184 5189354
+16	1569 2141 1268638 14056589 150 1140 100 680 2240 203451 428313279
+17	3710 165496 1270314 14102981 150.175977389 1149.90414088 5834 0 10 4319 14581
+18	169206 68788 1274030 14099947 150.481998021 1149.425697761 1722 0.086129223 1925.511832961 486354.17419437 270939529.12815
+19	237994 65847 1274030 14099947 150.481998021 1149.425697761 1722 0.000670865 5.005088655 1000.288483816 1179.7974849232
+20	303841 67089 1278641 14102785 150.789638676 1149.876227381 1754 0.00047113 3.708220608 1000.526826184 1127.0155804959
