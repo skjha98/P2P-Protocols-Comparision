@@ -1,0 +1,29 @@
+file 154425 1638553609                                          
+version 2
+run PastryDHT-3-20211203-23:12:44-6496
+attr Lifetime 400s
+attr configname PastryDHT
+attr datetime 20211203-23:12:44
+attr experiment PastryDHT
+attr inifile configs.ini
+attr iterationvars $Lifetime=400s
+attr iterationvars2 "$Lifetime=400s, $repetition=0"
+attr measurement $Lifetime=400s
+attr network oversim.underlay.simpleunderlay.SimpleUnderlayNetwork
+attr processid 6496
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 3
+attr seedset 3
+
+vector 19  SimpleUnderlayNetwork.globalObserver.globalStatistics  "GlobalNodeList: Number of nodes"  ETV
+vector 20  SimpleUnderlayNetwork.globalObserver.globalStatistics  "GlobalDhtTestMap: Number of stored DHT entries"  ETV
+vector 21  SimpleUnderlayNetwork.globalObserver.globalStatistics  "LifetimeChurn: Time between deletes"  ETV
+vector 22  SimpleUnderlayNetwork.globalObserver.globalStatistics  "LifetimeChurn: Session Time"  ETV
+vector 23  SimpleUnderlayNetwork.globalObserver.globalStatistics  "LifetimeChurn: Time between creates"  ETV
+19	1043 417 3354588 27031184 150 1100 20 480 515 9963 4965043
+20	1460 2180 3354589 28075177 150 1140 100 690 2274 206190 439962506
+21	3640 48965 3358846 28313130 150.132508583 1149.06980086 1268 0.000342407 5.848315337 999.233332524 1578.9649745025
+22	52605 52066 3359024 28328685 150.141991166 1149.858914778 1286 0.149530457 2655.703992716 507294.4555309 390694308.65535
+23	104671 49754 3359024 28328685 150.141991166 1149.858914778 1286 0.003166585 5.297217696 1001.704699031 1567.7794709094

@@ -915,6 +915,7 @@ NodeVector* BasePastry::findNode(const OverlayKey& key,
                   "too big!");
     }
     RECORD_STATS(totalLookups++);
+    MyClass::isValidLookup(key);
 
     NodeVector* nextHops = new NodeVector(numRedundantNodes);
 
