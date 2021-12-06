@@ -36,6 +36,7 @@
 #include <BootstrapList.h>
 
 #include "BasePastry.h"
+#include "MyClass.h"
 
 
 void BasePastry::purgeVectors(void)
@@ -915,7 +916,6 @@ NodeVector* BasePastry::findNode(const OverlayKey& key,
                   "too big!");
     }
     RECORD_STATS(totalLookups++);
-    MyClass::isValidLookup(key);
 
     NodeVector* nextHops = new NodeVector(numRedundantNodes);
 
@@ -977,6 +977,8 @@ NodeVector* BasePastry::findNode(const OverlayKey& key,
             nextHops->add(*next);
         }
     }
+
+    MyClass::isValidLookup(key);
 
     bool err;
 

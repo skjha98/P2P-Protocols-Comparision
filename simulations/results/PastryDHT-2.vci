@@ -1,16 +1,16 @@
-file 212836 1638553364                                          
+file 212836 1638816378                                          
 version 2
-run PastryDHT-2-20211203-23:07:42-6496
+run PastryDHT-2-20211207-00:10:33-4724
 attr Lifetime 300s
 attr configname PastryDHT
-attr datetime 20211203-23:07:42
+attr datetime 20211207-00:10:33
 attr experiment PastryDHT
 attr inifile configs.ini
 attr iterationvars $Lifetime=300s
 attr iterationvars2 "$Lifetime=300s, $repetition=0"
 attr measurement $Lifetime=300s
 attr network oversim.underlay.simpleunderlay.SimpleUnderlayNetwork
-attr processid 6496
+attr processid 4724
 attr repetition 0
 attr replication #0
 attr resultdir results

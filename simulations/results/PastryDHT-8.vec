@@ -1,15 +1,15 @@
 version 2
-run PastryDHT-8-20211203-23:27:51-6496
+run PastryDHT-8-20211207-00:32:03-4724
 attr Lifetime 900s
 attr configname PastryDHT
-attr datetime 20211203-23:27:51
+attr datetime 20211207-00:32:03
 attr experiment PastryDHT
 attr inifile configs.ini
 attr iterationvars $Lifetime=900s
 attr iterationvars2 "$Lifetime=900s, $repetition=0"
 attr measurement $Lifetime=900s
 attr network oversim.underlay.simpleunderlay.SimpleUnderlayNetwork
-attr processid 6496
+attr processid 4724
 attr repetition 0
 attr replication #0
 attr resultdir results
