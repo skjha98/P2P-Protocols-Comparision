@@ -1,0 +1,174 @@
+version 2
+run PastryDHT-8-20211207-13:13:40-4660
+attr Lifetime 900s
+attr configname PastryDHT
+attr datetime 20211207-13:13:40
+attr experiment PastryDHT
+attr inifile configs.ini
+attr iterationvars $Lifetime=900s
+attr iterationvars2 "$Lifetime=900s, $repetition=0"
+attr measurement $Lifetime=900s
+attr network oversim.underlay.simpleunderlay.SimpleUnderlayNetwork
+attr processid 4660
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 8
+attr seedset 8
+
+scalar . 	Lifetime 	900
+attr unit  s
+scalar SimpleUnderlayNetwork.underlayConfigurator 	"Terminals added" 	2262
+scalar SimpleUnderlayNetwork.underlayConfigurator 	"Terminals removed" 	1240
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"GlobalStatistics: Simulation Time" 	1200
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"BaseApp (bootstrapList): Received Bytes/s from Overlay.mean" 	0
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"BaseApp (bootstrapList): Received Bytes/s from UDP.mean" 	0
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"BaseApp (bootstrapList): Received Messages/s from Overlay.mean" 	0
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"BaseApp (bootstrapList): Received Messages/s from UDP.mean" 	0
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"BaseApp (bootstrapList): Sent Bytes/s to Overlay.mean" 	0
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"BaseApp (bootstrapList): Sent Bytes/s to UDP.mean" 	0
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"BaseApp (bootstrapList): Sent Messages/s to Overlay.mean" 	0
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"BaseApp (bootstrapList): Sent Messages/s to UDP.mean" 	0
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"BaseApp (dht): Received Bytes/s from Overlay.mean" 	53.200958731752
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"BaseApp (dht): Received Bytes/s from UDP.mean" 	0
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"BaseApp (dht): Received Messages/s from Overlay.mean" 	0.66282748610783
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"BaseApp (dht): Received Messages/s from UDP.mean" 	0
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"BaseApp (dht): Sent Bytes/s to Overlay.mean" 	53.585503231491
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"BaseApp (dht): Sent Bytes/s to UDP.mean" 	0
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"BaseApp (dht): Sent Messages/s to Overlay.mean" 	0.76825527457461
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"BaseApp (dht): Sent Messages/s to UDP.mean" 	0
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"BaseApp (dhtTestApp): Received Bytes/s from Overlay.mean" 	0
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"BaseApp (dhtTestApp): Received Bytes/s from UDP.mean" 	0
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"BaseApp (dhtTestApp): Received Messages/s from Overlay.mean" 	0
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"BaseApp (dhtTestApp): Received Messages/s from UDP.mean" 	0
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"BaseApp (dhtTestApp): Sent Bytes/s to Overlay.mean" 	0
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"BaseApp (dhtTestApp): Sent Bytes/s to UDP.mean" 	0
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"BaseApp (dhtTestApp): Sent Messages/s to Overlay.mean" 	0
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"BaseApp (dhtTestApp): Sent Messages/s to UDP.mean" 	0
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"BaseApp (neighborCache): Received Bytes/s from Overlay.mean" 	273.91123747396
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"BaseApp (neighborCache): Received Bytes/s from UDP.mean" 	0
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"BaseApp (neighborCache): Received Messages/s from Overlay.mean" 	8.5597261710614
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"BaseApp (neighborCache): Received Messages/s from UDP.mean" 	0
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"BaseApp (neighborCache): Sent Bytes/s to Overlay.mean" 	317.76544726677
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"BaseApp (neighborCache): Sent Bytes/s to UDP.mean" 	0
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"BaseApp (neighborCache): Sent Messages/s to Overlay.mean" 	9.9301702270867
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"BaseApp (neighborCache): Sent Messages/s to UDP.mean" 	0
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"BaseApp (tier3): Received Bytes/s from Overlay.mean" 	0
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"BaseApp (tier3): Received Bytes/s from UDP.mean" 	0
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"BaseApp (tier3): Received Messages/s from Overlay.mean" 	0
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"BaseApp (tier3): Received Messages/s from UDP.mean" 	0
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"BaseApp (tier3): Sent Bytes/s to Overlay.mean" 	0
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"BaseApp (tier3): Sent Bytes/s to UDP.mean" 	0
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"BaseApp (tier3): Sent Messages/s to Overlay.mean" 	0
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"BaseApp (tier3): Sent Messages/s to UDP.mean" 	0
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"BaseOverlay: Dropped Bytes/s.mean" 	0
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"BaseOverlay: Dropped Messages/s.mean" 	0
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"BaseOverlay: Forwarded App Data Bytes/s.mean" 	0
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"BaseOverlay: Forwarded App Data Messages/s.mean" 	0
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"BaseOverlay: Forwarded App Lookup Bytes/s.mean" 	8.1223744048199
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"BaseOverlay: Forwarded App Lookup Messages/s.mean" 	0.075207170414999
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"BaseOverlay: Forwarded Maintenance Bytes/s.mean" 	0.16040662553756
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"BaseOverlay: Forwarded Maintenance Messages/s.mean" 	0.0029164841006829
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"BaseOverlay: Forwarded Total Bytes/s.mean" 	8.2827810303575
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"BaseOverlay: Forwarded Total Messages/s.mean" 	0.078123654515682
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"BaseOverlay: Join Retries.mean" 	1.0009289363679
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"BaseOverlay: Measured Session Time.mean" 	538.2054739311
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"BaseOverlay: Received App Data Bytes/s.mean" 	373.21087828702
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"BaseOverlay: Received App Data Messages/s.mean" 	9.2223761520563
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"BaseOverlay: Received App Lookup Bytes/s.mean" 	23.356371228835
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"BaseOverlay: Received App Lookup Messages/s.mean" 	0.26843528650141
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"BaseOverlay: Received Maintenance Bytes/s.mean" 	548.9786912808
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"BaseOverlay: Received Maintenance Messages/s.mean" 	0.55648917744564
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"BaseOverlay: Received Total Bytes/s.mean" 	945.54594079666
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"BaseOverlay: Received Total Messages/s.mean" 	10.047300616003
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"BaseOverlay: Sent App Data Bytes/s.mean" 	424.82899180204
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"BaseOverlay: Sent App Data Messages/s.mean" 	10.698247996548
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"BaseOverlay: Sent App Lookup Bytes/s.mean" 	25.207206352186
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"BaseOverlay: Sent App Lookup Messages/s.mean" 	0.28830519631225
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"BaseOverlay: Sent FailedNode Bytes/s.mean" 	0
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"BaseOverlay: Sent FailedNode Messages/s.mean" 	0
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"BaseOverlay: Sent FailedNodeResponse Bytes/s.mean" 	0
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"BaseOverlay: Sent FailedNodeResponse Messages/s.mean" 	0
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"BaseOverlay: Sent FindNode Bytes/s.mean" 	0
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"BaseOverlay: Sent FindNode Messages/s.mean" 	0
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"BaseOverlay: Sent FindNodeResponse Bytes/s.mean" 	3.7701621688552
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"BaseOverlay: Sent FindNodeResponse Messages/s.mean" 	0.044354849045356
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"BaseOverlay: Sent Maintenance Bytes/s.mean" 	482.78259641572
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"BaseOverlay: Sent Maintenance Messages/s.mean" 	0.62744191900461
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"BaseOverlay: Sent Ping Bytes/s.mean" 	0
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"BaseOverlay: Sent Ping Messages/s.mean" 	0
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"BaseOverlay: Sent Ping Response Bytes/s.mean" 	0
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"BaseOverlay: Sent Ping Response Messages/s.mean" 	0
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"BaseOverlay: Sent Total Bytes/s.mean" 	932.81879456995
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"BaseOverlay: Sent Total Messages/s.mean" 	11.613995111865
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"BasePastry: LEAFSET Messages received/s.mean" 	0
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"BasePastry: LEAFSET Messages sent/s.mean" 	0
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"BasePastry: LEAFSET Requests received/s.mean" 	0
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"BasePastry: LEAFSET Requests sent/s.mean" 	0
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"BasePastry: ROUTING TABLE ROW Messages received/s.mean" 	0
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"BasePastry: ROUTING TABLE ROW Messages sent/s.mean" 	0
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"BasePastry: ROUTING TABLE ROW Requests received/s.mean" 	0
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"BasePastry: ROUTING TABLE ROW Requests sent/s.mean" 	0
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"BasePastry: bytes of LEAFSET Messages received/s.mean" 	0
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"BasePastry: bytes of LEAFSET Messages sent/s.mean" 	0
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"BasePastry: bytes of LEAFSET Requests received/s.mean" 	0
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"BasePastry: bytes of LEAFSET Requests sent/s.mean" 	0
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"BasePastry: bytes of ROUTING TABLE ROW Messages received/s.mean" 	0
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"BasePastry: bytes of ROUTING TABLE ROW Messages sent/s.mean" 	0
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"BasePastry: bytes of ROUTING TABLE ROW Requests received/s.mean" 	0
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"BasePastry: bytes of ROUTING TABLE ROW Requests sent/s.mean" 	0
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"BasePastry: join success ratio.mean" 	0.99897750511247
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"BasePastry: join tries.mean" 	1.0026292725679
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"BasePastry: lookups in routing table.mean" 	45.754760798885
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"BasePastry: lookups using closerNode().mean" 	9.0719925685091
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"BasePastry: lookups using closerNode() with result from neighborhood set.mean" 	0
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"BasePastry: responsible lookups.mean" 	39.468183929401
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"BasePastry: total number of lookups.mean" 	94.294937296795
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"DHT: Sent Maintenance Bytes/s.mean" 	30.053267324471
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"DHT: Sent Maintenance Messages/s.mean" 	0.27075015607632
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"DHT: Sent Normal Bytes/s.mean" 	23.53223590702
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"DHT: Sent Normal Messages/s.mean" 	0.49750511849829
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"DHTTestApp: Failed GET Requests/s.mean" 	0.00090746499368218
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"DHTTestApp: Failed PUT Requests/s.mean" 	0.0016877293639651
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"DHTTestApp: GET Latency (s).mean" 	0.99764578199422
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"DHTTestApp: GET Success Ratio.mean" 	0.92853793313313
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"DHTTestApp: PUT Latency (s).mean" 	0.95327769332116
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"DHTTestApp: Sent GET Messages/s.mean" 	0.012868114895619
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"DHTTestApp: Sent PUT Messages/s.mean" 	0.025712449592246
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"DHTTestApp: Sent Total Messages/s.mean" 	0.038580564487865
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"DHTTestApp: Successful GET Requests/s.mean" 	0.011960649901937
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"DHTTestApp: Successful PUT Requests/s.mean" 	0.024024720228281
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"NeighborCache: Ping hit rate.mean" 	0.75830903291862
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"Pastry: JOIN Messages received/s.mean" 	0.0010884747133467
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"Pastry: JOIN Messages seen/s.mean" 	0.0032064854203195
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"Pastry: JOIN Messages sent/s.mean" 	0.0056877904764621
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"Pastry: REPAIR Requests received/s.mean" 	0.044032305286423
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"Pastry: REPAIR Requests sent/s.mean" 	0.052865570315154
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"Pastry: STATE Messages received/s.mean" 	0.46754243080681
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"Pastry: STATE Messages sent/s.mean" 	0.41186421401922
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"Pastry: STATE Requests received/s.mean" 	0.032383143793601
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"Pastry: STATE Requests sent/s.mean" 	0.14985075722511
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"Pastry: bytes of JOIN Messages received/s.mean" 	0.0021769494266933
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"Pastry: bytes of JOIN Messages seen/s.mean" 	0.0064129708406389
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"Pastry: bytes of JOIN Messages sent/s.mean" 	0.011375580952924
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"Pastry: bytes of REPAIR Requests received/s.mean" 	0.088064610572846
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"Pastry: bytes of REPAIR Requests sent/s.mean" 	0.10573114063031
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"Pastry: bytes of STATE Messages received/s.mean" 	548.20467909667
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"Pastry: bytes of STATE Messages sent/s.mean" 	481.47641450808
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"Pastry: bytes of STATE Requests received/s.mean" 	0.064766287587203
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"Pastry: bytes of STATE Requests sent/s.mean" 	0.29970151445022
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"Pastry: joins with missing replies from routing path/s.mean" 	0
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"SimpleTCP: Packets dropped due to network partitions.mean" 	0
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"SimpleTCP: Packets dropped due to queue overflows.mean" 	0
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"SimpleTCP: Packets dropped due to unavailable destination.mean" 	0
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"SimpleTCP: Packets sent.mean" 	0
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"SimpleUDP: Packets dropped due to network partitions.mean" 	0
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"SimpleUDP: Packets dropped due to queue overflows.mean" 	0
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"SimpleUDP: Packets dropped due to unavailable destination.mean" 	347.07199256851
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"SimpleUDP: Packets dropped with bad checksum.mean" 	0
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"SimpleUDP: Packets sent.mean" 	4511.4774732931
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"Vector: GlobalDhtTestMap: Number of stored DHT entries.mean" 	4491.36
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"Vector: GlobalNodeList: Number of nodes.mean" 	1017.4
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"Vector: LifetimeChurn: Session Time.mean" 	920.88796651957
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"Vector: LifetimeChurn: Time between creates.mean" 	0.87525039713799
+scalar SimpleUnderlayNetwork.globalObserver.globalStatistics 	"Vector: LifetimeChurn: Time between deletes.mean" 	0.8951589409624
