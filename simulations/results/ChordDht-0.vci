@@ -1,29 +1,29 @@
-file 1208562 1638555480                                         
+file 121011 1639146633                                          
 version 2
-run ChordDht-0-20211203-23:45:45-3224
+run ChordDht-0-20211210-20:00:14-12816
 attr Lifetime 100s
 attr configname ChordDht
-attr datetime 20211203-23:45:45
+attr datetime 20211210-20:00:14
 attr experiment ChordDht
 attr inifile configs.ini
 attr iterationvars $Lifetime=100s
 attr iterationvars2 "$Lifetime=100s, $repetition=0"
 attr measurement $Lifetime=100s
 attr network oversim.underlay.simpleunderlay.SimpleUnderlayNetwork
-attr processid 3224
+attr processid 12816
 attr repetition 0
 attr replication #0
 attr resultdir results
 attr runnumber 0
 attr seedset 0
 
-vector 1  SimpleUnderlayNetwork.globalObserver.globalStatistics  "GlobalNodeList: Number of nodes"  ETV
-vector 2  SimpleUnderlayNetwork.globalObserver.globalStatistics  "GlobalDhtTestMap: Number of stored DHT entries"  ETV
-vector 3  SimpleUnderlayNetwork.globalObserver.globalStatistics  "LifetimeChurn: Time between deletes"  ETV
-vector 4  SimpleUnderlayNetwork.globalObserver.globalStatistics  "LifetimeChurn: Session Time"  ETV
-vector 5  SimpleUnderlayNetwork.globalObserver.globalStatistics  "LifetimeChurn: Time between creates"  ETV
-1	1035 403 937529 2950916 200 1150 20 1040 1127 21735 23632371
-2	1438 2018 937530 3016302 200 1190 100 1020 3523 315269 1029435829
-3	3456 396289 937640 3031719 200.032825845 1199.951936037 10721 8.878e-006 0.94815909 999.952909533 184.50120079045
-4	399745 411264 938134 3031643 200.198386143 1199.915660245 10755 0.003087242 857.973740387 1075260.6544673 213436830.14455
-5	811009 397553 938134 3031643 200.198386143 1199.915660245 10755 1.647e-006 0.900524746 999.941645223 187.86031006269
+vector 1  SimpleUnderlayNetwork.globalObserver.globalStatistics  "GlobalDhtTestMap: Number of stored DHT entries"  ETV
+vector 2  SimpleUnderlayNetwork.globalObserver.globalStatistics  "LifetimeChurn: Time between deletes"  ETV
+vector 3  SimpleUnderlayNetwork.globalObserver.globalStatistics  "LifetimeChurn: Session Time"  ETV
+vector 4  SimpleUnderlayNetwork.globalObserver.globalStatistics  "LifetimeChurn: Time between creates"  ETV
+vector 5  SimpleUnderlayNetwork.globalObserver.globalStatistics  "GlobalNodeList: Number of nodes"  ETV
+1	1037 1799 64646 393971 110 1100 100 74 373 31688 10558002
+2	2836 38655 64888 397449 110.572927474 1109.871112485 1080 0.000514332 6.911833099 1000.89178037 1804.8119776172
+3	41491 40303 65507 397335 112.531847728 1109.40772792 1086 0.032136537 865.259200092 112560.31082464 23683128.755596
+4	81794 38855 65507 397335 112.531847728 1109.40772792 1086 0.000134013 6.917322806 999.842629917 1777.3611555676
+5	120649 362 81796 393970 150 1100 20 100 126 2246 253154

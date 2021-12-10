@@ -1,4 +1,3 @@
-// MyClass.cc
 #include <iostream>
 
 using std::cout;
@@ -28,7 +27,7 @@ luDelays delays;
 double MyClass::hops = 0;
 double MyClass::finished_lookups = 0;
 double MyClass::time = 0;
-bool MyClass::iterative = true;
+
 
 double MyClass::removed_lookups = 0; // used for calculating lookups that take too long and are removed
 double MyClass::lookup_calls = 0;
@@ -38,26 +37,13 @@ double MyClass::numberOfNodes = 0;
 double MyClass::numberOfKeys = 0;
 double MyClass::maxKeys = 0;
 double MyClass::minKeys = 1000;
-int MyClass::maxDelay = INT_MAX;
 
-string MyClass::dht = "empty";
-double MyClass::lookupFreq = 0;
-double MyClass::churnRate = 0;
 int MyClass::terminalsAdded = 0;
 int MyClass::terminalsRemoved = 0;
 
 int MyClass::networkSize = 0;
 double MyClass::stabilizeInterval = 0;
 double MyClass::fixFingersInterval = 0;
-int MyClass::routingTableSize = 0;
-string MyClass::routingModel = "empty";
-int MyClass::aid = 0;
-
-// ### KADEMLIA #######
-
-int MyClass::k = 0;
-int MyClass::s = 0;
-int MyClass::b = 0;
 
 double MyClass::hopsPerLookup = 0;
 double MyClass::lookupMessageOverhead = 0;
@@ -100,50 +86,26 @@ void MyClass::addDelay(double delay) {
 // removes lookups from the map container
 void MyClass::removeLookup(OverlayKey key) {
 
-    bool skip = false;
-
     // checks that the key exists in the lookups map
     lookupHops::iterator it;
     it = lookups.find(key);
     if (it == lookups.end())
         return;
+    
+    // calculates the number of hops in this lookup
+    int hoptmp = (lookups[key] - 1) * 2;
+    addHop(hoptmp);
+    lookups.erase(key);
 
-    // if delay > 5 seconds the lookup is removed from the map
+    // calculates the delay of this lookup
     double delaytmp = (simTime().dbl() - delays[key]);
-    if (delaytmp > maxDelay) {
-        cout << "DELAY " << delaytmp << endl;
-        delays.erase(key);
-        lookups.erase(key);
-        skip = true;
-        ++removed_lookups;
-    }
-    // removes all the lookups currently having a delay > 5 seconds from the map
-    luDelays::iterator iter;
-    for (iter = delays.begin(); iter != delays.end(); iter++) {
-        double delaytmp = (simTime().dbl() - (iter -> second));
-        if (delaytmp > maxDelay) {
-            OverlayKey temp = iter -> first;
+    addDelay(delaytmp);
+    delays.erase(key);
 
-            delays.erase(temp);
-            lookups.erase(temp);
-            ++removed_lookups;
-        }
-    }
-    if (skip == false) {
-        // calculates the number of hops in this lookup
-        int hoptmp = (lookups[key] - 1) * 2;
-        addHop(hoptmp);
-        lookups.erase(key);
-
-        // calculates the delay of this lookup
-        double delaytmp = (simTime().dbl() - delays[key]);
-        addDelay(delaytmp);
-        delays.erase(key);
-    }
 }
 
 // checks that there is a ongoing lookup for a specific key
-bool MyClass::isValidLookup(OverlayKey key) {
+bool MyClass::incrementHop(OverlayKey key) {
     map < OverlayKey, int, double > ::iterator iter;
     bool tmp = false;
     for (iter = lookups.begin(); iter != lookups.end(); iter++) {
@@ -170,17 +132,7 @@ void MyClass::reset() {
     MyClass::minKeys = 1000;
     MyClass::stabilizeInterval = 0;
     MyClass::fixFingersInterval = 0;
-    MyClass::dht = "empty";
-    MyClass::lookupFreq = 0;
-    MyClass::churnRate = 0;
     MyClass::networkSize = 0;
-    MyClass::routingTableSize = 0;
-    MyClass::routingModel = "empty";
-    MyClass::aid = 0;
-    MyClass::iterative = true;
-    MyClass::k = 0;
-    MyClass::s = 0;
-    MyClass::b = 0;
     MyClass::hopsPerLookup = 0;
     MyClass::lookupMessageOverhead = 0;
     MyClass::lookupDelay = 0;

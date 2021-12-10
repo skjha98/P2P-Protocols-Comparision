@@ -598,7 +598,7 @@ NodeVector* Chord::findNode(const OverlayKey& key,
         nextHop->downsizeTo(numRedundantNodes);
     }
 
-    MyClass::isValidLookup(key);
+    MyClass::incrementHop(key);
     return nextHop;
 }
 

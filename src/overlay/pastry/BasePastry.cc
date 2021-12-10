@@ -978,7 +978,7 @@ NodeVector* BasePastry::findNode(const OverlayKey& key,
         }
     }
 
-    MyClass::isValidLookup(key);
+    MyClass::incrementHop(key);
 
     bool err;
 

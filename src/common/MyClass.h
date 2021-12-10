@@ -1,4 +1,3 @@
-// MyClass.h
 #include <string>
 using std::string;
 #include<OverlayKey.h>
@@ -13,22 +12,16 @@ class MyClass {
 
 		static std::map<OverlayKey, int> lookupHops;
 		static std::map<OverlayKey, double> luDelay;
-		static void addMaintenance(int join, int notify, int stabilize,
-		int newSuc, int fixFing);
 		static void addHop(int hopCount);
-		static void addHop2(int hopCount);
 		static void addKeys(int keys);
 		static void reset();
 		static void printLookups();
 		static void addLookup(OverlayKey key, double simtime);
 		static void addDelay(double delay);
 		static void removeLookup(OverlayKey key);
-		static bool isValidLookup(OverlayKey key);
-		static void addHandle(IPvXAddress ip, NodeHandle handle);
-		static NodeHandle getHandle(IPvXAddress ip);
+		static bool incrementHop(OverlayKey key);
 
 		static double hops;
-		static bool iterative; 
 		static double finished_lookups;
 		static double removed_lookups;
 		static double lookup_calls;
@@ -38,24 +31,14 @@ class MyClass {
 		static double numberOfKeys;
 		static double maxKeys;
 		static double minKeys;
-		static int maxDelay;
 
 		static double stabilizeInterval;
 		static double fixFingersInterval;
 		static double time;
-		static string dht;
-		static double lookupFreq;
-		static double churnRate;
 		static int terminalsAdded;
 		static int terminalsRemoved;
 		static int networkSize;
-		static int routingTableSize;
-		static string routingModel;
-		static int aid;
-		// #### KADEMLIA ############
-		static int k;
-		static int s;
-		static int b;
+
 		static double hopsPerLookup;
 		static double lookupMessageOverhead;
 		static double lookupDelay;

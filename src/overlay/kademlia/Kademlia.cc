@@ -1114,7 +1114,7 @@ NodeVector* Kademlia::findNode(const OverlayKey& key, int numRedundantNodes,
 
     delete comp;
 
-    MyClass::isValidLookup(key);
+    MyClass::incrementHop(key);
     return result;
 }
 
